@@ -51,15 +51,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'student') {
 
 <?php include 'header.php'; ?>
 
-<div class="sidebar">
-    <h3>Navigation</h3>
-    <ul>
-        <li><a href="userdashboard.php">🙍🏻‍♂️ Dashboard</a></li>
-        <li><a href="rooms.php">🏠 Rooms</a></li>
-        <li><a href="payments.php">💳 Payments</a></li>
-        <li><a href="logout.php">🚪 Logout</a></li>
-    </ul>
-</div>
+
 
 <div class="main">
     <div class="content">

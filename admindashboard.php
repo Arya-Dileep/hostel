@@ -8,36 +8,12 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Admin Dashboard</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
 
-        .topbar {
-            margin-left: 220px; /* match sidebar width */
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-bottom: 1px solid #ccc;
-        }
 
-        .content {
-            margin-left: 220px; /* match sidebar width */
-            padding: 20px;
-        }
-    </style>
-</head>
-<body>
 
 <?php include 'sidebar.php'; ?>
 
-<div class="topbar">
-    Logged in as: <strong><?php echo htmlspecialchars($_SESSION['user']['name']); ?></strong>
-</div>
+
 
 <div class="content">
     <h1>Welcome, Admin!</h1>
